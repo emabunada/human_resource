@@ -3,7 +3,7 @@ from . import __version__ as app_version
 app_name = "human_resource"
 app_title = "Human Resource"
 app_publisher = "mohammed"
-app_description = "human"
+app_description = "human resource"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "killouta@gmail.com"

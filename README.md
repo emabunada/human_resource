@@ -1,6 +1,6 @@
 ## Human Resource
 
-human
+human resource
 
 #### License
 

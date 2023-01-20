@@ -9,7 +9,7 @@ from human_resource import __version__ as version
 setup(
 	name="human_resource",
 	version=version,
-	description="human",
+	description="human resource",
 	author="mohammed",
 	author_email="killouta@gmail.com",
 	packages=find_packages(),
