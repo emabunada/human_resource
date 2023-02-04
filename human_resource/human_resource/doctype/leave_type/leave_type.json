@@ -1,24 +1,44 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "leave.######",
+ "autoname": "field:leave_type_name",
  "creation": "2023-01-21 15:36:03.792749",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "leave_type_name"
+  "leave_type_name",
+  "max_continuous_days_allowed",
+  "allow_negative_balance",
+  "applicable_after"
  ],
  "fields": [
   {
    "fieldname": "leave_type_name",
    "fieldtype": "Data",
-   "label": "Leave Type Name"
+   "label": "Leave Type Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "max_continuous_days_allowed",
+   "fieldtype": "Float",
+   "label": "Max Continuous Days Allowed"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_negative_balance",
+   "fieldtype": "Check",
+   "label": "Allow Negative Balance"
+  },
+  {
+   "fieldname": "applicable_after",
+   "fieldtype": "Float",
+   "label": "Applicable After"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-21 22:16:00.394367",
+ "modified": "2023-01-24 08:02:39.354231",
  "modified_by": "Administrator",
  "module": "Human Resource",
  "name": "Leave Type",

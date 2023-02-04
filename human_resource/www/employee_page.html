@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee</title>
+
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Employee Full Name</th>
+        <th>Employee Age</th>
+        <th>Employee Department</th>
+    </tr>
+            {% for employee in employees %}
+
+    <tr>
+
+        <td>{{ employee.employee_full_name }}</td>
+        <td>{{ employee.employee_age }}</td>
+        <td>{{ employee.employee_department }}</td>
+
+        {% endfor %}
+
+    </tr>
+    </table>
+</body>
+
+</html>

@@ -19,8 +19,10 @@
   {
    "fieldname": "employee",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Employee",
-   "options": "Employee"
+   "options": "Employee",
+   "reqd": 1
   },
   {
    "fetch_from": "employee.employee_full_name",
@@ -31,8 +33,10 @@
   {
    "fieldname": "leave_type",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Leave Type",
-   "options": "Leave Type"
+   "options": "Leave Type",
+   "reqd": 1
   },
   {
    "fetch_from": "emplyee.employee_department",
@@ -44,17 +48,22 @@
   {
    "fieldname": "from_date",
    "fieldtype": "Date",
-   "label": "From Date"
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
   },
   {
    "fieldname": "to_date",
    "fieldtype": "Date",
-   "label": "To Date"
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
   },
   {
    "fieldname": "total_leaves_allocated",
    "fieldtype": "Float",
-   "label": "Total Leaves Allocated"
+   "label": "Total Leaves Allocated",
+   "reqd": 1
   },
   {
    "fetch_from": "leave_type.leave_type_name",
@@ -66,7 +75,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-22 07:25:52.504792",
+ "modified": "2023-01-24 07:19:44.584386",
  "modified_by": "Administrator",
  "module": "Human Resource",
  "name": "Leave Allocation",

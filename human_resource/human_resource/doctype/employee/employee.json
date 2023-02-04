@@ -17,7 +17,8 @@
   "employee_date_of_joining",
   "employee_mobile",
   "employee_department",
-  "employee_education"
+  "employee_education",
+  "user"
  ],
  "fields": [
   {
@@ -82,11 +83,17 @@
    "fieldtype": "Table",
    "label": "Employee Education",
    "options": "Employee Education"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-16 10:21:30.577808",
+ "modified": "2023-02-03 20:48:50.189290",
  "modified_by": "Administrator",
  "module": "Human Resource",
  "name": "Employee",

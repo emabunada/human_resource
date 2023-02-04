@@ -11,20 +11,23 @@
   "leave_type",
   "department",
   "status",
-  "leave_balance",
+  "leave_balance_before_application",
   "from_date",
   "to_date",
   "total_leave_days",
   "alternative_employee",
   "alternative_employee_name",
-  "reason"
+  "reason",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "employee",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Employee",
-   "options": "Employee"
+   "options": "Employee",
+   "reqd": 1
   },
   {
    "fetch_from": "employee.employee_full_name",
@@ -35,8 +38,10 @@
   {
    "fieldname": "leave_type",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Leave Type",
-   "options": "Leave Type"
+   "options": "Leave Type",
+   "reqd": 1
   },
   {
    "fieldname": "department",
@@ -51,23 +56,20 @@
    "options": "Open\nApproved\nRejected"
   },
   {
-   "fieldname": "leave_balance",
-   "fieldtype": "Data",
-   "label": "Leave Balance",
-   "read_only": 1
-  },
-  {
    "fieldname": "from_date",
    "fieldtype": "Date",
-   "label": "From Date"
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
   },
   {
    "fieldname": "to_date",
    "fieldtype": "Date",
-   "label": "To Date"
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
   },
   {
-   "fetch_from": "to_date - from_date",
    "fieldname": "total_leave_days",
    "fieldtype": "Float",
    "label": "Total Leave Days",
@@ -89,11 +91,27 @@
    "fieldname": "reason",
    "fieldtype": "Small Text",
    "label": "Reason"
+  },
+  {
+   "fieldname": "leave_balance_before_application",
+   "fieldtype": "Data",
+   "label": "Leave Balance Before Application",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Leave Application",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-01-23 06:33:22.410690",
+ "modified": "2023-01-24 07:18:10.834659",
  "modified_by": "Administrator",
  "module": "Human Resource",
  "name": "Leave Application",
